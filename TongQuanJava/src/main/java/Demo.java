@@ -15,13 +15,18 @@ public class Demo { // Tên file trun tên class
         // java rất chi tiết
         /*
         Khai báo 1 biến trong Java:
-        <kieu_du_lieu> <ten_bien> = <giá_tri>
+        <kieu_du_lieu> <ten_bien> = <giá_tri>;
          */
-        // Số (Number): số nguyên (integer - int), số thực (double)
+        // Số (Number): số nguyên (integer - int, long, byte, short), số thực (double, float)
+        float k = 5.3f;
+        double h2 = 5.4;
         // Chuỗi (String)
-        // Ký tự (Character)
+        String st = "Hello";
+        // Ký tự (Character - char)
+        char l = 'K';
         // Logic (Boolean)
-        int a = 1;
+        boolean isGood = true;
+        int a;
         a = 3;
         double c = 3.4;
         String name = "Linh"; // chuỗi trong Java: ""
@@ -31,7 +36,7 @@ public class Demo { // Tên file trun tên class
         // Toán tử: là các ký hiệu cho phép tương tác với giá trị của các biến:
         /*
         Toán tử gán: =  +=  -=  *=  /=  %=
-        Toán tử toán học: +  -  *  /  %
+        Toán tử toán học: +  -  *  /  %  ++  --
         Toán tử so sánh: ==  >  <  >=  <=  != (Luôn luôn trả lại giá trị boolean)
         Toán tử logic: &&  ||  ! (trả lại giá trị boolean => sử dụng cho cấu trúc điều kiện)
          */
