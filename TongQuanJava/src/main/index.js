@@ -14,3 +14,9 @@ if(PI) { // tự động chuyển thành boolean, các giá trị chuyển thàn
 }
 
 console.log(`Linh có số tuủi là ${PI}`);
+
+let a = 10;
+let b = 20;
+let c = a;
+a = 11;
+console.log(c); // 10
