@@ -22,7 +22,7 @@ public class Main {
         System.out.println(numbers.length);
         // Thay đổi giá trị phần tử tại 1 vị trí
         numbers[2] = 4;
-        System.out.println(numbers[2]); // 4
+        System.out.println(numbers[2]); // 4 => Truy xuất 1 phần tử trong mảng
         // Duyệt mảng
         System.out.println("Duyet mang");
         // Cách 1: dùng fori
@@ -54,12 +54,12 @@ public class Main {
         System.out.println("total " + total);
     }
 
-    public static void showHello() {
+    public static void showHello() { // void là không trả về gì
         System.out.println("Hello world");
     }
 
     public static int getTotal(int a, int b) { // a, b: Tham số truyền vào: là các biến giả định cho dữ liệu truyền vào
         int sum = a + b;
-        return sum;
+        return sum; // trả về số nguyên => theo kiêểu khai báo bên trên
     }
 }
