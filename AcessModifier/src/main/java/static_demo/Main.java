@@ -22,5 +22,7 @@ public class Main {
         Website.doTre = "high";
         System.out.println(Website.doTre);
         System.out.println(Website.getIp()); // gọi hàm static
+        boolean isSick = true;
+        Boolean isSick02 = false;
     }
 }
