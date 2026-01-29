@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-//        Dog dog = new Dog("Micky", 2, "Den");
+        Dog dog = new Dog("Micky", 2, "Den");
 //        System.out.println(dog.getName());
-//        dog.eat();
-//        System.out.println(dog.mauLong);
-//        dog.bark();
+        System.out.println(dog.name);
+        dog.eat();
+        System.out.println(dog.mauLong);
+        dog.bark();
 
         Animal a = new Dog("Micky", 2, "Vang");
 //      kiểu khai báo    Kiểu thực tế
