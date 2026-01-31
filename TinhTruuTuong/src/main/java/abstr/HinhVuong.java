@@ -23,4 +23,5 @@ public class HinhVuong extends Hinh {
     public double getC() {
         return this.canh * 4;
     }
+
 }

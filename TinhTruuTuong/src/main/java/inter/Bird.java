@@ -35,4 +35,17 @@ public class Bird extends A implements Flyable, EatAble {
     public void anKieuPhap() {
 
     }
+
+//    @Override
+//    public void go() {
+//        Flyable.super.go();
+//    }
+    // có thể tự chọn ghi đè default method của interface
+
+    public static void main(String[] args) {
+        System.out.println(Flyable.SO_CANH);
+        Flyable.show();
+        Bird bird = new Bird();
+        bird.go();
+    }
 }
