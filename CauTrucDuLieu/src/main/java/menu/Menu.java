@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
-    ArrayList<Integer> list = new ArrayList<>();
+    ArrayList<Integer> list = new ArrayList<>(); // quản lý dữ liệu
     Scanner inputNumber = new Scanner(System.in);
     Scanner inputStr = new Scanner(System.in);
 
@@ -37,6 +37,7 @@ public class Menu {
         } while (choice != 0);
     }
 
+    // Cần xác định được dữ liệu đầu vào để đưa ra yêu cầu cho nguời dùng
     public void showEditMenu() {
         System.out.println("Enter edit index: ");
         int index = this.inputNumber.nextInt();
