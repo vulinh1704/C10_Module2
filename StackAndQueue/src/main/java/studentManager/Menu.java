@@ -114,7 +114,8 @@ public class Menu {
 
 /*
 Luyện tập lại bài quản lý hoàn chỉnh như trên.
-Bài tập tập quản lý Product (id, price, name, quantity)
+Dựa vào bài quản lý đã demo hoàn thành Bài kiểm tra (Hoàn thành truơc:
+Quản lý Product (có id, price, name, quantity)
 Thực hiện xây menu có các tính năng sau:
 + CRUD sản phẩm
 + Tìm theo tên gần đúng.
@@ -123,5 +124,8 @@ Thực hiện xây menu có các tính năng sau:
 + Tìm theo khoảng số lượng
 + Tìm sản phẩm có giá lớn nhất
 + Tìm sản phẩm có giá và số lượng nhỏ nhất.
-
+ => Bài kiểm tra và gửi git vào nhóm sau khi hoàn thành.
+ // Nâng cao:
+ Xử lý cho trường hợp tìm theo id nhưng người dùng nhập id không tồn tại.
+ Tổng hợp lại kiến thức vào XMIND.
  */
