@@ -21,7 +21,7 @@ public class Menu {
             System.out.println("6.Find by name");
             System.out.println("0.Exit");
             System.out.println("Enter your choice: ");
-            choice = inputNumber.nextInt();
+            choice = Input.inputInt();
             switch (choice) {
                 case 1:
                     showAddMenu();
@@ -101,7 +101,7 @@ public class Menu {
     public void showAddMenu() {
         System.out.println("============ Add Student ============");
         System.out.println("Enter student id: ");
-        int id = inputNumber.nextInt();
+        int id = Input.inputInt();
         System.out.println("Enter student name: ");
         String name = inputStr.nextLine();
         System.out.println("Enter student gender: ");
@@ -113,7 +113,7 @@ public class Menu {
 }
 
 /*
-Luyện tập lại bài quản lý hoàn chỉnh như trên.
+Luyện tập lại bài quản lý hoàn chỉnh như trên, có ghép xử lý ngoại lệ.
 Dựa vào bài quản lý đã demo hoàn thành Bài kiểm tra (Hoàn thành truơc:
 Quản lý Product (có id, price, name, quantity)
 Thực hiện xây menu có các tính năng sau:
