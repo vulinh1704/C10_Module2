@@ -1,51 +1,40 @@
 package studentManager;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
+// Cứ chỗ nào đọc thì gọi get List để lấy data từ file.
+// Cứ chỗ nào ảnh hưởng dữ liệu (Thêm mới, Sửa, Xóa) thì gọi saveData.
 public class StudentManager {
     private ArrayList<Student> students;
 
-    private Map<Integer, Student> studentMap;
-
     public StudentManager() {
-        this.students = new ArrayList<>();
-        this.studentMap = new HashMap<>();
+        this.students = ReadAndWriteFile.getList();
     }
 
     public void add(Student student) {
-//        this.students.add(student);
-        this.studentMap.put(student.getId(), student);
+        this.students.add(student); // có phần tử mới
+        ReadAndWriteFile.saveData(this.students); // save
     }
 
     public ArrayList<Student> getAll() {
-//        return this.students;
-        ArrayList<Student> list = new ArrayList<>();
-        Set<Integer> keys = this.studentMap.keySet();
-        for (Integer k : keys) {
-            list.add(this.studentMap.get(k));
-        }
-        return list;
+        return ReadAndWriteFile.getList();
     }
 
     public void update(int id, Student student) {
-//        int index = this.getIndexById(id);
-//        this.students.set(index, student);
-        this.studentMap.replace(id, student);
+        int index = this.getIndexById(id);
+        this.students.set(index, student);
+        ReadAndWriteFile.saveData(this.students);
     }
 
     public Student getById(int id) {
-//        int index = this.getIndexById(id);
-//        return this.students.get(index);
-        return this.studentMap.get(id);
+        int index = this.getIndexById(id);
+        return this.students.get(index);
     }
 
     public void remove(int id) {
-//        int index = this.getIndexById(id);
-//        this.students.remove(index);
-        this.studentMap.remove(id);
+        int index = this.getIndexById(id);
+        this.students.remove(index);
+        ReadAndWriteFile.saveData(this.students);
     }
 
     public int getIndexById(int id) {
