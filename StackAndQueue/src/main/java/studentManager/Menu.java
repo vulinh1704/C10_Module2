@@ -73,10 +73,11 @@ public class Menu {
         System.out.println("============ Edit Student ============");
         System.out.println("Enter student edit id: ");
         int idEdit = inputNumber.nextInt();
-        System.out.println("Enter student name: ");
         String name = inputStr.nextLine();
+        name = StudentValidator.validateName(name);
         System.out.println("Enter student gender: ");
         String gender = inputStr.nextLine();
+        gender = StudentValidator.validateGender(gender);
         Student newStudent = new Student(idEdit, name, gender);
         studentManager.update(idEdit, newStudent);
         System.out.println("Edit Successfully!");
@@ -104,8 +105,10 @@ public class Menu {
         int id = Input.inputInt();
         System.out.println("Enter student name: ");
         String name = inputStr.nextLine();
+        name = StudentValidator.validateName(name);
         System.out.println("Enter student gender: ");
         String gender = inputStr.nextLine();
+        gender = StudentValidator.validateGender(gender);
         Student newStudent = new Student(id, name, gender);
         studentManager.add(newStudent); // yêu cầu 1 student là dữ liệu từ người dùng.
         System.out.println("Add Successfully!");
